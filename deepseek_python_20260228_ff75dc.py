@@ -2776,8 +2776,8 @@ def handle_all_messages(message):
         sell_to_bot_command(message)
     
     elif text.startswith('обменник'):
-        message.text = '/ = '/обменник'
-        exchange_menu(message)
+    message.text = '/обменник'
+    exchange_menu(message)
     
     elif text.startswith('продатькрдс '):
         message.text = '/продатькрдобменник'
