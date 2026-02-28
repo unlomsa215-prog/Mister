@@ -2757,10 +2757,8 @@ def handle_all_messages(message):
         donate_command(message)
     
     elif text.startswith('сенд '):
-        message.text = '/сенд ' + text[5:]
-        send_krт'):
-        message.text = '/донат'
-        donate_command(message)
+    message.text = '/сенд ' + text[5:]
+    send_krds_command(message)
     
     elif text.startswith('сенд '):
         message.text = '/сенд ' + text[5:]
