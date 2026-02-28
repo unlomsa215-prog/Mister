@@ -2744,8 +2744,9 @@ def handle_all_messages(message):
         message.text = '/турнир_покинуть ' + text[16:]
         tournament_leave(message)
     
-    elif text.startswith('дона = '/турнир_вступить ' + text[16:]
-        tournament_join(message)
+    elif text.startswith('турнир_вступить '):
+    message.text = '/турнир_вступить ' + text[16:]
+    tournament_join(message)
     
     elif text.startswith('турнир_покинуть '):
         message.text = '/турнир_покинуть ' + text[16:]
