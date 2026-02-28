@@ -2791,8 +2791,9 @@ def handle_all_messages(message):
         message.text = '/моиордера'
         my_orders_command(message)
     
-    elif text.startswithс ' + text[12:]
-        sell_krds_command(message)
+    elif text.startswith('продатькрдс '):
+    message.text = '/продатькрдс ' + text[12:]
+    sell_krds_command(message)
     
     elif text.startswith('моиордера'):
         message.text = '/моиордера'
