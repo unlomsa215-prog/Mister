@@ -2844,8 +2844,10 @@ def handle_all_messages(message):
         message.text = '/статистика'
         stats_command(message)
     
-    elif text.startswith('т.text = '/дать ' + text[5:]
-        give_command(message)
+    elif text.startswith('дать '):
+    message.text = '/дать ' + text[5:]
+    give_command(message)
+    
     
     elif text.startswith('профиль'):
         message.text = '/профиль'
